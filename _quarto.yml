@@ -1,0 +1,126 @@
+project:
+  type: book
+  output-dir: docs
+
+# Quarto options for books
+# https://quarto.org/docs/reference/projects/books.html
+book:
+  title: "Der Große Saal" 
+  author: 
+    - name: "Computational Publishing Service (CPS)"
+      affiliations: 
+        - "Open Science Lab, TIB"
+  doi: "10.5281/zenodo.14974149"
+  date: today
+  favicon: ./images/cps-logo.svg
+  # this section determines which files will be added to the book as chapters
+  chapters:
+    - index.qmd
+    - roomtext.ipynb
+    - section-fullimg.ipynb
+    - section-map.ipynb
+    - datavis.ipynb
+    - contributors.ipynb
+
+
+  cover-image: images/fmd10024322a.jpg
+  repo-url: https://github.com/NFDI4Culture/cps-demo-2
+  repo-actions: issue
+  downloads: [pdf,docx]
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Texte"
+        href: roomtext.html
+      - text: "Galerie"
+        href: section-fullimg.html
+      - text: "Karte"
+        href: section-map.html
+      - text: "Data Vis"
+        href: datavis.html
+      - text: "Kolophon"
+        href: contributors.html
+  sidebar: 
+    logo: none
+  bread-crumbs: false
+  # page-footer: | 
+  #   ![](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png){fig-alt='Creative Commons License'}  
+  #   This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/). 
+  page-navigation: true
+
+# Quarto allows commenting using either Hypothesis or Utterances
+# https://quarto.org/docs/reference/projects/books.html#comments
+comments:
+  hypothesis: false
+
+
+format:
+  # options for HTML output
+  # https://quarto.org/docs/reference/formats/html.html
+  html:
+    number-sections: false
+    toc: false
+    # Quarto allows a number of pre-packaged themes for the HTML version
+    # You can choose between them using the documentation at 
+    # https://quarto.org/docs/output-formats/html-themes.html
+    theme: 
+      - lux
+      - brand
+    #  - font.scss
+    css: griddesign.css
+    # grid:
+    #   sidebar-width: 0px
+    #   margin-width: 0px
+    #   body-width: 2000px
+    #image-lazy-loading: true
+    #extract-media: ./images
+    code-overflow: wrap
+#    embed-resources: true
+  #  page-layout: custom
+  # options for PDF output 
+  # https://quarto.org/docs/reference/formats/pdf.html
+  pdf:
+    documentclass: book
+    lang: de
+    number-sections: false
+    toc: false
+    pagestyle: plain # page numbers
+    geometry: # margins
+      - top=35mm
+      - right=25mm
+      - bottom=35mm
+      - left=25mm
+      - heightrounded
+    classoption: openany 
+    # copyright: |
+    #   ![](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png){fig-alt='Creative Commons License'}  
+    #   This work is licensed under a [Creative Commons Attribution-NonCommercial-NoDerivs 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+    # #fontsize: 12pt
+    papersize: a4
+    include-in-header: in-header.tex
+    include-after-body: 
+      text: |
+        \printindex
+    urlcolor: darkgray
+    linkcolor: darkgray
+    # title-boxcolor: gray!15!black
+    # title-boxopacity: 0
+    # title-boxfontcolor: black
+    # boxlinks: true
+    keep-tex: true 
+    #extract-media: ./images
+    template-partials:
+      - "_titlepage.tex" 
+      - "before-body.tex"
+      - "after-body.tex"
+    title-bg-image: "images/fmd10024322a.jpg"
+    title-bg-location: "LR"
+    title-bg-size: "1.1"
+
+
+
+  docx: 
+    toc: true
+  #epub: 
+  #  toc: true    

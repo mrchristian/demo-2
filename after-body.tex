@@ -1,0 +1,52 @@
+%  SOURCE: https://github.com/nmfs-opensci/quarto_titlepages_v1/tree/main
+
+% This is a combination of Pandoc templating and LaTeX
+% Pandoc templating https://pandoc.org/MANUAL.html#templates
+
+\tcbset{ % parameters for text background 
+    frame code={},
+    left=0pt, % margins
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!10!black, % box color
+    width=\dimexpr\textwidth\relax, 
+    boxsep=15pt, % spacing between boxes
+    arc=0pt, % no rounded edges
+    opacityback=0, % translucent-ish background
+    fontupper=\color{white}, % fontcolor
+    fontlower=\color{white}
+    }
+
+$if(titlepage-geometry)$
+  \newgeometry{$for(titlepage-geometry)$$titlepage-geometry$$sep$,$endfor$}
+$endif$
+
+
+% background image
+$if(title-bg-image)$
+  \This$if(title-bg-location)$$title-bg-location$CornerWallPaper$else$CenterWallPaper$endif${$if(title-bg-size)$$title-bg-size$$else$1$endif$}{$title-bg-image$}  
+$endif$
+
+\bigbreak
+
+
+
+
+%use \vfill instead to get the space to fill flexibly	
+%\vspace{0.25\textheight} % Whitespace between the title block and the publisher
+
+\vfill
+
+% Whitespace between the title block and the tagline
+\vspace{1\baselineskip} 
+
+\begin{tcolorbox}
+\centering
+
+
+\end{tcolorbox}
+\pagenumbering{gobble}
+$if(titlepage-geometry)$
+  \restoregeometry
+$endif$

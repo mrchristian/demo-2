@@ -1,0 +1,86 @@
+.img_small {
+  width: 24%; 
+  float: left;
+  margin: 0.2em;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.img_small:hover {
+  border: 0.1em transparent solid;
+}
+
+.img_popover {
+  height: 100vh;
+  width: 100vw;
+  object-fit: contain;
+  padding: 1.5vw;
+  padding-bottom:5vw;
+  border: 0;
+  background: transparent;
+  z-index: 10;
+  cursor: pointer;
+  backdrop-filter: blur(5px); 
+}
+
+.info-wd {
+  height:6vh;
+  position:fixed;
+  align-items:baseline;
+  z-index:100;
+  bottom: 3vh;
+  left:7vw;
+  right:7vw;
+  margin-top:1vh;
+  background-color: #fff;
+  flex-direction: row;
+  width: 86vw;
+  justify-content: space-between;
+  opacity: 90%;
+}
+
+.info-wd > a {
+  flex-grow: 1;
+}
+
+a > .btn-light {
+  width: 100%;
+  text-decoration: underline;
+}
+
+.btn-secondary {
+  cursor:default !important;
+  flex-grow: 1;
+}
+
+.img_grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.quarto-sidebar-toggle-title {
+  display: none;
+}
+
+#quarto-header {
+  z-index: 9;
+}
+
+
+.fullimage {
+  display:flex;
+  object-fit: contain;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  width: 100%;  /* Ensures it takes up full width */
+  height: 100%; /* Ensures it takes up full height */
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+.stop-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 

@@ -1,0 +1,72 @@
+#img_full {
+  height: 98vh;
+  max-width: 100vw;
+  object-fit: contain;
+  overflow: hidden;
+  margin-bottom: 3vh;
+  margin-top: 0;
+  display:inline-block;
+  visibility: visible;
+  flex-grow:3;
+}
+
+.navig {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.fixed-top {
+  position: absolute;
+} 
+
+.arrow {
+  font-size: 7em;
+  align-self:center;
+  color:grey;
+  height: 90vh;
+  height: 3em;
+  cursor:pointer !important;
+  flex-grow: 0.5;
+  text-decoration: none !important;
+}
+
+.stop-scrolling {
+  height: 90vh;
+  overflow:hidden;
+}
+
+.stop-scrolling p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+thead, tbody, tfoot, tr, td, th, .table th, .table td {
+  padding:0.25em;
+}
+
+#infogrid {
+  margin-right: auto;
+  margin-left: auto;
+  display:grid;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-items: center;
+  text-align:center;
+}
+
+#paintingName {
+  /* font-variant: small-caps; */ 
+  font-weight: bold;
+  font-size: larger;
+}
+
+.allcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
+}

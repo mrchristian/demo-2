@@ -1,0 +1,137 @@
+
+.fullimage {
+  display:flex;
+  object-fit: contain;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  width: 100%;  /* Ensures it takes up full width */
+  height: 100%; /* Ensures it takes up full height */
+  backdrop-filter: blur(5px); 
+}
+
+.img_square, .infohover, .outerinfo {
+  height: 240px;
+  width: 240px;
+  overflow: hidden;
+  margin: 0.15em;
+  object-fit: cover;
+}
+
+.infohover:hover {
+  background:red;
+  z-index:100;
+}
+.img_popover {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 1.5vw;
+  border: 0;
+  background: transparent;
+  z-index: 10;
+  cursor: pointer;
+  backdrop-filter: blur(5px); 
+}
+
+.stop-scrolling { 
+  height: 100%; 
+  overflow: hidden; 
+} 
+
+/*
+.close-btn {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent; 
+  color: white; 
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+*/
+
+/*
+::popover-open {
+  max-height: 95vh;
+  min-height: 0;
+  max-width: 95vw;
+  min-width: 0;
+  object-fit: contain;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+*/
+
+.column-page {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quarto-sidebar-toggle-title {
+  display: none;
+}
+
+.page-columns .column-page {
+  z-index: 8;
+}
+
+#quarto-header {
+  z-index: 9;
+}
+.navbar,
+.navbar-expand-lg {
+  height: 1px;
+  font-size: smaller;
+}
+.nav-item {
+  align-content: center;
+}
+.info-wd {
+  height:6vh;
+  position:fixed;
+  align-items:baseline;
+  z-index:200;
+  bottom: 3vh;
+  left:7vw;
+  right:7vw;
+  margin-top:1vh;
+  background-color: #fff;
+  flex-direction: row;
+  width: 86vw;
+  justify-content: space-between;
+  opacity: 90%;
+  backdrop-filter: none !important;
+}
+
+.info-wd > a {
+  flex-grow: 1;
+}
+
+a > .btn-light {
+  width: 100%;
+  text-decoration: underline;
+}
+
+.btn-secondary {
+  cursor:default !important;
+  flex-grow: 1;
+}
+
+.blur-active {
+    backdrop-filter: blur(5px);
+}
+
+.gdesc-inner {
+  font-size: small;
+  padding: 11px 10px !important;
+  color: black;
+}
+

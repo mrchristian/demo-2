@@ -1,0 +1,21 @@
+$if(copyright)$
+  \begin{frontmatter}
+  \begin{titlepage}
+  $_titlepage.tex()$
+  \end{titlepage}
+  % $copyright$
+  \end{frontmatter}
+
+$else$
+  \begin{frontmatter}
+  \begin{titlepage}
+  $_titlepage.tex()$
+  \end{titlepage}
+  \end{frontmatter}
+
+$endif$
+
+\tableofcontents
+{\let\newpage\relax}
+
+\RaggedRight

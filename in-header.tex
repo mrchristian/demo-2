@@ -1,0 +1,65 @@
+\usepackage{hyphenat}
+\usepackage{graphicx}
+\usepackage{wallpaper} % for the background image on title page
+\usepackage{geometry} % for margins
+\usepackage{libertine}
+\usepackage[most]{tcolorbox}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{contour}
+\usepackage{imakeidx}
+\usepackage{ragged2e} % text alignment
+\usepackage{titlesec}
+\usepackage{titling}   % Für den Dokumenttitel
+
+
+\setcounter{tocdepth}{0}
+\makeindex[intoc=true]
+\onehalfspacing % line spacing
+\setlength{\parskip}{1.5em}
+\setlength\parindent{0pt}
+
+
+\setmainfont{Lato}[
+    Path=./fonts/Lato/,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
+    BoldItalicFont=*-BoldItalic
+]
+
+% Überschriften-Schrift aus Datei laden (Pfad anpassen falls nötig)
+\newfontfamily\headingfont{Kanit}[
+    Path=./fonts/Kanit/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-SemiBold, 
+    ItalicFont = *-Italic, 
+    BoldItalicFont = *-SemiBoldItalic
+]  
+
+% Titel-Stil ändern
+\pretitle{\begin{center}\headingfont\Huge\bfseries}
+    \posttitle{\end{center}}
+    \preauthor{\begin{center}\headingfont\Large}
+    \postauthor{\end{center}}
+    \predate{\begin{center}\headingfont\large}
+    \postdate{\end{center}}
+    
+    % Kapitel-Formatierung ändern
+    \titleformat{\chapter}[display]
+      {\headingfont\Huge\bfseries}  % Stil der Kapitelüberschrift
+      {\chaptername\ \thechapter}{10pt}{\headingfont}
+    
+    % Part-Formatierung ändern
+    \titleformat{\part}
+      {\headingfont\Huge\bfseries}  % Stil für Parts
+      {\thepart}{20pt}{}
+    
+
+% Überschriften-Formatierung
+\titleformat{\section}{\headingfont\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\headingfont\Large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\headingfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+

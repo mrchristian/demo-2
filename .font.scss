@@ -1,0 +1,43 @@
+/*-- scss:uses --*/
+@font-face {
+  font-family: "Asgard";
+  src: url("fonts/Asgard/Asgard-Regular-trial.ttf") format(opentype);
+}
+@font-face {
+  font-family: "Asgard";
+  src: url("fonts/Asgard/Asgard-Regular-Italic-trial.ttf") format(opentype);
+  font-style:italic;
+}
+@font-face {
+  font-family: "Asgard";
+  src: url("fonts/Asgard/Asgard-Bold-Italic-trial.ttf") format(opentype);
+  font-weight: bold;
+  font-style:italic;
+}
+@font-face {
+  font-family: "Asgard";
+  src: url("fonts/Asgard/Asgard-Bold-trial.ttf") format(opentype);
+  font-weight:bold;
+}
+
+
+@font-face {
+  font-family: "Boring";
+  src: url("fonts/Boring-Sans/Boring-Sans-A-Regular-trial.ttf") format(opentype);
+}
+@font-face {
+  font-family: "Boring";
+  src: url("fonts/Boring-Sans/Boring-Sans-A-Bold-Italic-trial.ttf") format(opentype);
+  font-weight:bold;
+  font-style:italic;
+}
+@font-face {
+  font-family: "Boring";
+  src: url("fonts/Boring-Sans/Boring-Sans-A-Bold-trial.ttf") format(opentype);
+  font-weight:bold;
+}
+@font-face {
+  font-family: "Boring";
+  src: url("fonts/Boring-Sans/Boring-Sans-A-Italic-trial.ttf") format(opentype);
+  font-style:italic;
+}

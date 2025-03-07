@@ -1,0 +1,41 @@
+color:
+  palette:
+    palatinate: "#571F4E"
+    alabaster: "#E8E5DA"
+    uc-blue: "#4F759B"
+  background: alabaster
+  foreground: palatinate
+  primary: uc-blue
+
+logo:
+  medium: "./images/cps-logo-2.png"
+
+typography:
+  fonts:
+    - family: Kanit
+      source: google
+      weight: 600
+  #     files: 
+  #       - path: fonts/Asgard/Asgard-Regular-trial.woff2
+  #       - path: fonts/Asgard/Asgard-Regular-Italic-trial.woff2
+  #         style: italic
+  #       - path: fonts/Asgard/Asgard-Regular-Bold-Italic-trial.woff2
+  #         style: italic
+  #         weight: bold
+  #       - path: fonts/Asgard/Asgard-Regular-Bold-trial.woff2
+  #         weight: bold
+    - family: Lato
+      source: google
+  #     files: 
+  #       - path: https://www.dafont.com/boring-sans-a.charmap
+  #       - path: ./fonts/Boring-Sans/Boring-Sans-A-Italic-trial.ttf
+  #         style: italic
+  #       - path: ./fonts/Boring-Sans/Boring-Sans-A-Regular-Bold-Italic-trial.ttf
+  #         style: italic
+  #         weight: bold
+  #       - path: ./fonts/Boring-Sans/Boring-Sans-A-Regular-Bold-trial.ttf
+  #         weight: bold
+  #   - family: Original Surfer
+  #     source: google
+  base: Lato
+  headings: Kanit
